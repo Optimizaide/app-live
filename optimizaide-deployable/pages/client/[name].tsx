@@ -1,4 +1,4 @@
-import { clients } from "../../data";
+import { clients } from "../data";
 
 export async function getStaticPaths() {
   const paths = Object.keys(clients).map(name => ({ params: { name } }));
